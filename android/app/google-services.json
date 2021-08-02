@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314762720231",
+    "project_id": "lawyer-assist",
+    "storage_bucket": "lawyer-assist.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314762720231:android:cb6df6663f37889867c342",
+        "android_client_info": {
+          "package_name": "com.javierrangel.lawyer_assist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314762720231-sflqkn5l8aec9tpcg3368qh3n68kmm82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWZNsSWY9Tf-c_7NiHhxxt3wmNu9mAKj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314762720231-sflqkn5l8aec9tpcg3368qh3n68kmm82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
