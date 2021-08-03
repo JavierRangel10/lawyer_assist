@@ -15,7 +15,9 @@ void main() async {
   await Firebase.initializeApp();
   runApp(MyApp());
   var logged = FirebaseAuth.instance.currentUser;
-  print('branches');
+
+  print('branc');
+
 }
 
 class MyApp extends StatelessWidget {
