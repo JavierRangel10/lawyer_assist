@@ -10,14 +10,12 @@ import 'package:lawyer_assist/screens/Home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:lawyer_assist/screens/View_Case.dart';
 
-
-
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());
   var logged = FirebaseAuth.instance.currentUser;
-
+  print('branch');
 }
 
 class MyApp extends StatelessWidget {
@@ -26,22 +24,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
-    initialRoute: FirebaseAuth.instance.currentUser == null ? 'WelcomeScreen' : 'Home',
-
-
-    routes: {
-
-      'WelcomeScreen': (context) => WelcomeScreen(),
-      'LoginScreen': (context) => LoginScreen(),
-      'RegistrationScreen': (context) => RegistrationScreen(),
-      'Home': (context) => Home(),
-      'ListPage': (context) => ListPage(),
-      'AddCase': (context) => AddCase(),
-      'ViewCase': (context) => ViewCase(),
-      'CalendarPageView': (context) => CalendarPageView(),
-        }
-    );
-
+        initialRoute: FirebaseAuth.instance.currentUser == null
+            ? 'WelcomeScreen'
+            : 'Home',
+        routes: {
+          'WelcomeScreen': (context) => WelcomeScreen(),
+          'LoginScreen': (context) => LoginScreen(),
+          'RegistrationScreen': (context) => RegistrationScreen(),
+          'Home': (context) => Home(),
+          'ListPage': (context) => ListPage(),
+          'AddCase': (context) => AddCase(),
+          'ViewCase': (context) => ViewCase(),
+          'CalendarPageView': (context) => CalendarPageView(),
+        });
   }
 }
