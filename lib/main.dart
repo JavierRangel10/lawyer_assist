@@ -17,7 +17,7 @@ void main() async{
   await Firebase.initializeApp();
   runApp(MyApp());
   var logged = FirebaseAuth.instance.currentUser;
-  print('helloo');
+  print('a;j;aaoj');
 }
 
 class MyApp extends StatelessWidget {
